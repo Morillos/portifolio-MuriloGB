@@ -1,0 +1,29 @@
+.experience {
+  flex-direction: column;
+}
+
+.experience .title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 1rem 0 .5rem;
+  }
+  .experience .date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 300;
+    margin-bottom: .5rem;
+  }
+  .experience .date::before {
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    width: 1.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../icons/calendar.svg);
+  }
+
+  .experience .description{
+    font-weight: 400;
+  }

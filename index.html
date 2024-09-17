@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Murilo G Barcelos</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/acordeon.css" />
+    <link rel="stylesheet" href="./assets/css/languages.css" />
+    <link rel="stylesheet" href="/assets/css/portfolio.css" />
+    <link rel="stylesheet" href="./assets/css/experience.css" />
+    <link rel="stylesheet" href="./assets/css/skills.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <img
+          src="./assets/images/Murilo_web.png"
+          alt="Foto de Nome"
+          class="photo" />
+        <h1 class="title">
+          Olá,<br />
+          eu sou Murilo Gallon Barcelos
+        </h1>
+        <div class="information">
+          <p class="job">Desenvolvedor Fron-end</p>
+          <p class="location">Vila Velha-ES</p>
+          <p class="phone">
+            <a href="tel:+5527999754186">+55 (27) 9 9975-4186</a>
+          </p>
+          <p class="email">
+            <a href="mailto:murilobarcelos130@gmail.com"
+              >murilobarcelos130@gmail.com</a
+            >
+          </p>
+        </div>
+      </header>
+
+      <section class="acordeon">
+        <button class="trigger" type="button">
+          <h2>Skills</h2>
+        </button>
+        <div class="content">
+          <div class="skills acordeon-transition">
+            <section class="tools">
+              <h3>Habilidades Profissionais:</h3>
+              <ul>
+                <li>
+                  <img src="./assets/icons/tools/html.svg" alt="HTML5" />
+                </li>
+                <li>
+                  <img src="./assets/icons/tools/css.svg" alt="CSS3" />
+                </li>
+                <li>
+                  <img src="./assets/icons/tools/js.svg" alt="Javascript" />
+                </li>
+                <li>
+                  <img src="./assets/icons/tools/github.svg" alt="CSS3" />
+                </li>
+              </ul>
+            </section>
+            <section class="personal">
+              <h3>Habilidades Pessoais:</h3>
+              <ul>
+                <li>Trabalho em Equipe</li>
+                <li>Flexibiliade</li>
+                <li>Comunicativo</li>
+                <li>Empatia</li>
+                <li>Organização</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="acordeon">
+        <button class="trigger" type="button">
+          <h2>Idiomas</h2>
+        </button>
+        <div class="content">
+          <ul class="languages acordeon-transition">
+            <li>Português(BR) (fluente)</li>
+            <li>Inglês (avançado)</li>
+            <li>Espanhol (básico)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="acordeon">
+        <button class="trigger" type="button">
+          <h2>Projetos</h2>
+        </button>
+        <div class="content">
+          <ul class="portfolio acordeon-transition">
+            <li>
+              <span class="title github">Pokedex utilizando PokeAPI</span>
+              <a
+                href="https://morillos.github.io/desafio-pokedexJS/"
+                target="_blank"
+                >https://morillos.github.io/desafio-pokedexJS/</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="acordeon">
+        <button class="trigger" type="button">
+          <h2>Experiência</h2>
+        </button>
+        <div class="content">
+          <ul class="experience acordeon-transition">
+            <li>
+              <p class="title">
+                Gerente de Operações e Estoque / Juliana Machado Fotografias
+              </p>
+              <p class="date">Out/2015 - Jun/2024</p>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                impedit ratione aperiam quisquam sapiente? Provident atque, sint
+                perferendis doloremque ad deleniti perspiciatis cumque. Eos, ea
+                aperiam nesciunt deleniti qui exercitationem?
+              </p>
+            </li>
+            <li>
+              <p class="title">
+                Gerente de Operações e Estoque / Juliana Machado Fotografias
+              </p>
+              <p class="date">Out/2015 - Jun/2024</p>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                impedit ratione aperiam quisquam sapiente? Provident atque, sint
+                perferendis doloremque ad deleniti perspiciatis cumque. Eos, ea
+                aperiam nesciunt deleniti qui exercitationem?
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/js/acordeon.js"></script>
+  </body>
+</html>

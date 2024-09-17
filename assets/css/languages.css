@@ -1,0 +1,17 @@
+.languages {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  
+}
+.languages li::before {
+  content: "";
+  display: inline-block;
+  height: .625rem;
+  width: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../icons/check.svg);
+}

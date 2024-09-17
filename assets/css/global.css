@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@font-face {
+  font-family: "Neue Macihna";
+  src: url("../fonts/NeueMachina-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+main {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+}
+main::before {
+  content: "";
+  background-image: url("../images/background-top.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 140vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+main::after {
+  content: "";
+  background-image: url("../images/background-botton.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+body {
+  background-color: #000;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  text-decoration: underline;
+}
+h2{
+  font-size: 1.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    max-width: 1024px;
+    margin: 1rem auto;
+  }
+}
