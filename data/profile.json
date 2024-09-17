@@ -8,15 +8,19 @@
     "hardSkills": [
       {
         "name": "HTML",
-        "logo": "TODO"
+        "logo": "https://raw.githubusercontent.com/Morillos/portifolio-MuriloGB/main/data/logos/html.png"
       },
       {
-        "name": "Java",
-        "logo": "TODO"
+        "name": "CSS",
+        "logo": "https://raw.githubusercontent.com/Morillos/portifolio-MuriloGB/main/data/logos/css.png"
       },
       {
-        "name": "Kotlin",
-        "logo": "TODO"
+        "name": "Javascript",
+        "logo": "https://raw.githubusercontent.com/Morillos/portifolio-MuriloGB/main/data/logos/js.png"
+      },
+      {
+        "name": "Github",
+        "logo": "https://raw.githubusercontent.com/Morillos/portifolio-MuriloGB/main/data/logos/github.png"
       }
     ],
     "softSkills": [
