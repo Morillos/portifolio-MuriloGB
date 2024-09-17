@@ -34,10 +34,16 @@ function updateProfileHardSkills(profileData) {
     .map((skill) => `<li><img src="${skill.logo}" alt="${skill.name}"/></li>`)
     .join("");
 }
-
+function updateProfileLanguages(profileData) {
+  const languages = document.getElementById("profile.languages");
+  languages = profileData.languages
+    .map((language) => `<li>${language.name} (${language.level})</li>`)
+    .join("");
+}
 (async () => {
   const profileData = await fetchProfileData();
   updateProfileData(profileData);
   updateProfileSoftSkills(profileData);
   updateProfileHardSkills(profileData);
+  updateProfileLanguages(profileData);
 })();

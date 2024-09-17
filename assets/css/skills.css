@@ -19,6 +19,7 @@
 
 .tools li img {
   max-width: 50px;
+  max-height: 50px;
 }
 .skills .personal {
     align-self: flex-start;
