@@ -21,29 +21,47 @@ function updateProfileData(profileData) {
   email.href = `mailto:${profileData.email}`;
 }
 
-function updateProfileSoftSkills(profileData) {
+function updateSoftSkills(profileData) {
   const softSkils = document.getElementById("profile.skills.softSkills");
   softSkils.innerHTML = profileData.skills.softSkills
     .map((skill) => `<li>${skill}</li>`)
     .join("");
 }
 
-function updateProfileHardSkills(profileData) {
+function updateHardSkills(profileData) {
   const hardSkills = document.getElementById("profile.skills.hardSkills");
   hardSkills.innerHTML = profileData.skills.hardSkills
     .map((skill) => `<li><img src="${skill.logo}" alt="${skill.name}"/></li>`)
     .join("");
 }
-function updateProfileLanguages(profileData) {
+function updateLanguages(profileData) {
   const languages = document.getElementById("profile.languages");
-  languages = profileData.languages
-    .map((language) => `<li>${language.name} (${language.level})</li>`)
+  languages.innerHTML = profileData.languages
+    .map((language) => `<li>${language.name} [${language.level}]</li>`)
     .join("");
 }
+
+function updatePortfolio(profileData) {
+  const portfolio = document.getElementById("profile.portfolio");
+  portfolio.innerHTML = profileData.portfolio
+    .map((project) => {
+      `<li>
+        <h3 ${project.github ? 'class="gitgub"' : ""}>${project.name}</h3>
+        <a
+          href="${project.url}"
+          target="_blank">
+          ${project.url}
+        </a>
+      </li>`;
+    })
+    .join("");
+}
+
 (async () => {
   const profileData = await fetchProfileData();
   updateProfileData(profileData);
-  updateProfileSoftSkills(profileData);
-  updateProfileHardSkills(profileData);
-  updateProfileLanguages(profileData);
+  updateSoftSkills(profileData);
+  updateHardSkills(profileData);
+  updateLanguages(profileData);
+  updatePortfolio(profileData);
 })();

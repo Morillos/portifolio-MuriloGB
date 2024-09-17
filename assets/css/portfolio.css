@@ -15,14 +15,14 @@
   margin-left: 0.25rem;
 }
 
-.portfolio .title {
+.portfolio h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
   font-size: 1.25rem;
   font-weight: 700;
 }
-.portfolio .title.github::before {
+.portfolio h3.github::before {
   content: "";
   display: inline-block;
   height: 1rem;
