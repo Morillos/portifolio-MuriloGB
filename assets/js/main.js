@@ -65,15 +65,12 @@ function updateExperience(profileData) {
     return `
       <li>
         <p class="title">${experience.name} / ${experience.institute}</p>
-        <p class="date">${experience.time
-          .map((item) => `${item}`)
-          .join("-")}</p>
+        <p class="date">${experience.time.start} - ${experience.time.end}</p>
         <p class="description">${experience.description}</p>
       </li>
     `;
   });
 }
-
 
 // MAIN
 (async () => {
