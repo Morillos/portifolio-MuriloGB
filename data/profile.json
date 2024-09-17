@@ -109,17 +109,17 @@
     {
       "name": "Pokedex utilizando a PokeAPI",
       "url": "https://morillos.github.io/desafio-pokedexJS/",
-      "github": "true"
+      "github": true
     }
   ],
-  "experiencias": [
+  "experience": [
     {
-      "nome": "Education Tech Lead ",
-      "descricao": "",
-      "instituicao": "Digital Innovation One (DIO)",
-      "periodo": {
-        "inicio": "03/2021",
-        "fim": "Atualmente"
+      "name": "Desenvolvedor Web e Monitor",
+      "description":  "Desenvolvimento do sistema web interno na parte front-end e back-end. Monitor no laboratório NCD, atendimento ao cliente e resolução de problemas.",
+      "institute": "NCD - Núcleo de Cidadania Digital",
+      "time": {
+        "start": "Set/2014",
+        "end": "Fev/2015"
       }
     }
   ]

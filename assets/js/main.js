@@ -45,18 +45,37 @@ function updatePortfolio(profileData) {
   const portfolio = document.getElementById("profile.portfolio");
   portfolio.innerHTML = profileData.portfolio
     .map((project) => {
-      `<li>
-        <h3 ${project.github ? 'class="gitgub"' : ""}>${project.name}</h3>
-        <a
-          href="${project.url}"
-          target="_blank">
-          ${project.url}
-        </a>
-      </li>`;
+      return `
+        <li>
+          <h3 ${project.github ? 'class="github"' : ""}>${project.name}</h3>
+          <a
+            href="${project.url}"
+            target="_blank">
+            ${project.url}
+          </a>
+        </li>
+      `;
     })
     .join("");
 }
 
+function updateExperience(profileData) {
+  const experience = document.getElementById("profile.experience");
+  experience.innerHTML = profileData.experience.map((experience) => {
+    return `
+      <li>
+        <p class="title">${experience.name} / ${experience.institute}</p>
+        <p class="date">${experience.time
+          .map((item) => `${item}`)
+          .join("-")}</p>
+        <p class="description">${experience.description}</p>
+      </li>
+    `;
+  });
+}
+
+
+// MAIN
 (async () => {
   const profileData = await fetchProfileData();
   updateProfileData(profileData);
@@ -64,4 +83,5 @@ function updatePortfolio(profileData) {
   updateHardSkills(profileData);
   updateLanguages(profileData);
   updatePortfolio(profileData);
+  updateExperience(profileData);
 })();
